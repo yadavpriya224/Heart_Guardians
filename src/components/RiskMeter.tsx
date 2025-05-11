@@ -34,8 +34,7 @@ const RiskMeter = ({ riskScore, className }: RiskMeterProps) => {
       
       <Progress 
         value={score} 
-        className="h-2" 
-        indicatorClassName={getProgressColor(score)}
+        className={`h-2 ${getProgressColor(score)}`}
       />
       
       <div className="flex justify-between mt-1">
